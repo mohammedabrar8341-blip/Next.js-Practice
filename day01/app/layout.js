@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -22,7 +23,27 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <div
+          style={{
+            backgroundColor: "beige",
+            padding: "10px",
+            display: "flex",
+            gap: "15px",
+          }}
+        >
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
+          <Link href="/todo">Todo</Link>
+          <Link href="/auth/signup">SignUp</Link>
+          <Link href="/auth/signin">SignIn</Link>
+        </div>
+
+        {children}
+
+        <div style={{ backgroundColor: "beige" }}>I am footer</div>
+      </body>
     </html>
   );
 }
