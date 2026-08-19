@@ -27,9 +27,9 @@ export default function RootLayout({ children }) {
         <div
           style={{
             backgroundColor: "beige",
-            padding: "10px",
+            padding: "30px",
             display: "flex",
-            gap: "15px",
+            gap: "55px",
           }}
         >
           <Link href="/">Home</Link>
