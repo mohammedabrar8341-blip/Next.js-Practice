@@ -9,7 +9,7 @@ export async function POST(req) {
     const body = await req.json();
     const { email, password, username } = body;
 
-    console.log(body)
+    console.log(body);
 
     if (!email || !password || !username) {
       return NextResponse.json(
@@ -21,7 +21,6 @@ export async function POST(req) {
     const existingUser = await UserModel.findOne({ email });
 
     console.log(existingUser);
-    
 
     if (existingUser) {
       return NextResponse.json({ msg: "User already exists" }, { status: 400 });

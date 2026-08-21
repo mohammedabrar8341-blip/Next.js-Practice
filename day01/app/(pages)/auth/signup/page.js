@@ -1,4 +1,5 @@
 export default function Signup() {
+  
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-green-50 to-emerald-100">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
@@ -7,6 +8,11 @@ export default function Signup() {
         </h1>
         <form className="space-y-4">
           <div>
+            <input
+              type="text"
+              placeholder="Enter your username"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+            />
             <input
               type="email"
               placeholder="Enter your email"

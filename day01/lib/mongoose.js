@@ -27,6 +27,7 @@ const TodoSchema = new Schema(
 
 export const UserModel =
   mongoose.models.users || mongoose.model("users", UserSchema);
+console.log("UserModel:", UserModel); // Log the UserModel to verify it's defined
 
 export const TodoModel =
   mongoose.models.todo || mongoose.model("todo", TodoSchema);
