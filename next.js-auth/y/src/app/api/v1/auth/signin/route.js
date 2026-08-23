@@ -1,5 +1,4 @@
 import { Connect } from "@/db/dbconfiguration";
-import mongoose from "mongoose";
 import bcryptjs from "bcryptjs";
 import jwt from "jsonwebtoken";
 import UserModel from "@/models/Usermodel";
